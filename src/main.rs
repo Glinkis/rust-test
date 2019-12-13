@@ -1,24 +1,24 @@
-mod vector;
-use vector::Vector2;
+mod point;
+use point::Point;
 
-fn create_vector2() -> Vector2 {
-    Vector2 { x: 0.0, y: 0.0 }
+fn create_point() -> Point {
+    Point { x: 0.0, y: 0.0 }
 }
 
-fn print_vector2(vector: &Vector2) {
+fn print_point(vector: &Point) {
     println!("The vector is: {} {}", vector.x, vector.y);
 }
 
-fn increment_vector2(vector: &mut Vector2) {
+fn increment_point(vector: &mut Point) {
     vector.x += 1.0;
     vector.y += 1.0;
 }
 
 fn main() {
-    let mut vector = create_vector2();
+    let mut vector = create_point();
 
-    print_vector2(&vector);
-    increment_vector2(&mut vector);
-    print_vector2(&vector);
-    print_vector2(&vector);
+    print_point(&vector);
+    increment_point(&mut vector);
+    print_point(&vector);
+    print_point(&vector);
 }
