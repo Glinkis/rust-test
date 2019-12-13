@@ -4,20 +4,20 @@ pub struct Point {
 }
 
 impl Point {
-    pub fn add(&mut self, vector: &Point) {
-        self.x += vector.x;
-        self.y += vector.y;
+    pub fn add(&mut self, point: &Point) {
+        self.x += point.x;
+        self.y += point.y;
     }
-    pub fn sub(&mut self, vector: &Point) {
-        self.x -= vector.x;
-        self.y -= vector.y;
+    pub fn sub(&mut self, point: &Point) {
+        self.x -= point.x;
+        self.y -= point.y;
     }
-    pub fn mul(&mut self, vector: &Point) {
-        self.x *= vector.x;
-        self.y *= vector.y;
+    pub fn mul(&mut self, point: &Point) {
+        self.x *= point.x;
+        self.y *= point.y;
     }
-    pub fn div(&mut self, vector: &Point) {
-        self.x /= vector.x;
-        self.y /= vector.y;
+    pub fn div(&mut self, point: &Point) {
+        self.x /= point.x;
+        self.y /= point.y;
     }
 }
