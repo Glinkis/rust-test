@@ -20,11 +20,17 @@ fn increment_point(point: &mut Point) {
 }
 
 fn main() {
-    let mut point = create_point();
+    let mut point_1 = create_point();
+    let mut point_2 = create_point();
 
-    print_point(&point);
-    increment_point(&mut point);
-    print_point(&point);
-    increment_point(&mut point);
-    print_point(&point);
+    print_point(&point_1);
+
+    increment_point(&mut point_1);
+    print_point(&point_1);
+
+    increment_point(&mut point_1);
+    print_point(&point_1);
+
+    increment_point(&mut point_2);
+    print_point(&(point_1 + point_2));
 }
