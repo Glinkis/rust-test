@@ -75,4 +75,10 @@ impl Point {
         self.y /= point.y;
         self.z /= point.z;
     }
+    pub fn to_string(&self) -> String {
+        let x = self.x.to_string();
+        let y = self.y.to_string();
+        let z = self.z.to_string();
+        format!("{} {} {}", x, y, z)
+    }
 }
